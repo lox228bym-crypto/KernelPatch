@@ -1,5 +1,5 @@
 #include <linux/kernel.h>
-#include <kpatch.h>
+#include "../../kernel/patch/include/kpatch.h"
 
 static int hook_sig(void *info, int flags) {
     return 0;
@@ -15,4 +15,3 @@ int kpm_init(void) {
 
 void kpm_exit(void) {
 }
-
